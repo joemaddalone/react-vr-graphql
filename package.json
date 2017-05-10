@@ -7,7 +7,8 @@
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "devtools": "react-devtools",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "gh-pages -d vr/build"
   },
   "dependencies": {
     "apollo-client": "^1.2.2",
@@ -26,6 +27,7 @@
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-react": "^7.0.0",
+    "gh-pages": "^1.0.0",
     "jest": "^19.0.2",
     "react-devtools": "^2.1.3",
     "react-test-renderer": "~15.4.1",

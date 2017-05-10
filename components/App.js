@@ -1,13 +1,10 @@
 import React from 'react'
 import {
 	AppRegistry,
-	asset,
 	Pano,
 	View,
 	VrButton,
-	Text,
-	PointLight,
-	AmbientLight
+	Text
 } from 'react-vr'
 import ApolloClient, { createNetworkInterface } from 'apollo-client'
 import { ApolloProvider, graphql } from 'react-apollo'
@@ -42,11 +39,9 @@ class learn_react_vr extends React.Component {
 		}
 	}
 	openHandler = () => {
-		//this.setState({ z1: this.state.z1 - 15, z2: this.state.z2 - 15, z3: this.state.z3 - 15 })
 		this.setState({ z: this.state.z.map(n => n-15) })
 	}
 	closeHandler = () => {
-		//this.setState({ z1: this.state.z1 + 15, z2: this.state.z2 + 15, z3: this.state.z3 + 15 })
 		this.setState({ z: this.state.z.map(n => n+15) })
 	}
 	selectCategory = (type) => {
